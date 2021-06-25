@@ -7,7 +7,7 @@ cTime = 0
 
 cap = cv2.VideoCapture(0) # set camera id
 
-detector = htm.handDetector()
+detector = htm.handDetector(detectionCon=0.7)
 
 while True: # Run forever
     success,img = cap.read() # read the image
